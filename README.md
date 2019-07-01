@@ -37,11 +37,38 @@ VSCode (Visual Studio Code) is running on top of an [Ubuntu 18.04 LTS Desktop](h
 
 ### Requirements
 
-- [Vagrant](https://www.vagrantup.com/ "Link to website of Vagrtant")
+- [Vagrant](https://www.vagrantup.com/ "Link to website of Vagrant")
+- [Git](https://git-scm.com/ "Link to website of Git")
 
 ## Usage
 
-Nothing here yet.
+### Getting started
+
+First make sure that you have all [requirements](#requirements) installed.
+
+Now open a terminal and *clone* the repository:
+
+```shell
+git clone https://ocular-d/vagrant-vscode
+```
+
+Change into that directory:
+
+```shell
+cd vagrant-vscode
+```
+
+Start the setup process by starting vagrant:
+
+```shell
+vagrant up
+```
+
+Depending on your bandwidth, this can take some minutes.
+
+
+
+
 
 ## Contributing
 
