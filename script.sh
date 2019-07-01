@@ -24,7 +24,7 @@ upgrade() {
     apt upgrade -y -qq
 }
 
-#The script is used for graphic environment
+# The script is used for graphic environment
 vb-guest() {
     echo -en "${COL_YELLOW} ==> Installing VirtualBox guest extension ${COL_RESET}\n"
     if grep -q VBOX /proc/scsi/scsi; then
@@ -41,12 +41,13 @@ desktop() {
     apt install -y -qq ubuntu-desktop
 }
 
-# Use snap to install Code
+# Use snap to install Visual Studio Code
 vscode() {
     echo -en "${COL_YELLOW} ==> Installing Visual Studio Code ${COL_RESET}\n"
     snap install --classic code
 }
 
+# Run functions
 update
 upgrade
 vb-guest
