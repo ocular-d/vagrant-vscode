@@ -34,7 +34,7 @@
 
 This is a demo of how to use [Visual Studio Code](https://code.visualstudio.com/ "Link to website") for technical (API) writing.
 
-VSCode (Visual Studio Code) is running on top of an [Ubuntu 18.04 LTS Desktop](https://ubuntu.com/download/desktop "Website of Ubuntu Desktop") configured with [extensions](https://code.visualstudio.com/docs/editor/extension-gallery "Link to website with VSCode extensions") for writing.
+VSCode (Visual Studio Code) is running on top of an [Ubuntu 18.04 LTS Desktop](https://ubuntu.com/download/desktop "Website of Ubuntu Desktop") configured with [extensions](https://code.visualstudio.com/docs/editor/extension-gallery "Link to website with VSCode extensions") for writing in [Markdown](https://en.wikipedia.org/wiki/Markdown "Link to wikipedia").
 
 ### Requirements
 
@@ -77,6 +77,14 @@ After the first run is finished, please run `vagrant up` for a second time.
 Now you will see the boot process starting.
 
 Depending on your bandwidth, this can take some minutes.
+
+After the build and setup process is finished, you can login in with the following credentials:
+
+**user:** *vagrant*
+
+**password:** *vagrant*
+
+
 
 ## Contributing
 
