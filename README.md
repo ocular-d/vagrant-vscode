@@ -27,6 +27,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Credits](#credits)
 
 <!-- ABOUT THE PROJECT -->
 ## About
@@ -64,16 +65,25 @@ Start the setup process by starting vagrant:
 vagrant up
 ```
 
+The first time running `vagrant up` will install and setup all required vagrant plugins.
+
+After the first run is finished, please run `vagrant up` for a second time.
+
+Now you will see the boot process starting.
+
 Depending on your bandwidth, this can take some minutes.
-
-
-
-
 
 ## Contributing
 
-Nothing here yet.
+We are a community effort, and everybody is most welcome to participate!
+
+Be it filing bugs, formulating enhancements, creating pull requests,
+or any other means of contribution, we encourage contributions from everyone.
 
 ## License
 
 Distributed under the [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html "Link to license") license.
+
+## Credits
+
+- [Pronovix](https://pronovix.com/ "Link to Pronovix website")
