@@ -39,7 +39,10 @@ npm_modules() {
     npm install remark-preset-lint-markdown-style-guide
 }
 
-
+update_bashrc() {
+    echo 'export PATH="$PATH:/home/vagrant/node_modules/.bin"' >> ~/.bashrc
+}
 # Run functions
 extensions
 npm_modules
+update_bashrc
