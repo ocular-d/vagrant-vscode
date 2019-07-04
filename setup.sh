@@ -42,7 +42,13 @@ npm_modules() {
 update_bashrc() {
     echo 'export PATH="$PATH:/home/vagrant/node_modules/.bin"' >> ~/.bashrc
 }
+
+update_vscode_settings() {
+    wget https://gist.githubusercontent.com/ocular-d/cda72372a8168f0711700d417fa8a13e/raw/5f23d12b395dd62d271c02e5ee3af26a000c06c7/settings.json -O /$HOME/.config/Code/User/settings.json
+}
+
 # Run functions
 extensions
 npm_modules
 update_bashrc
+update_vscode_settings
