@@ -9,7 +9,7 @@
 Vagrant.configure(2) do |config|
 
   # Plugins
-  config.vagrant.plugins = "vagrant-reload"
+  config.vagrant.plugins = ["vagrant-reload", "vagrant-vbguest"]
 
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -54,12 +54,12 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |v|
     v.gui = true
     v.memory = 2048
-    v.cpus = 2
+    v.cpus = 3
     v.name = "vscode"
     v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
     v.customize ["modifyvm", :id, "--ioapic", "on" ]
     v.customize ["modifyvm", :id, "--accelerate2dvideo", "on"]
-    v.customize ["modifyvm", :id, "--vram", 128]
+    v.customize ["modifyvm", :id, "--vram", 256]
     v.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
     v.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
   end
@@ -77,8 +77,8 @@ Vagrant.configure(2) do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision "shell", path: "install.sh"
-  config.vm.provision "shell", path: "setup.sh", privileged: false
+  config.vm.provision "shell", path: "install.sh", keep_color: true
+  config.vm.provision "shell", path: "setup.sh", keep_color: true, privileged: false
 
   #Reload
   config.vm.provision :reload

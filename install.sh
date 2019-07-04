@@ -21,24 +21,24 @@ update() {
 # Upgrade
 upgrade() {
     echo -en "${COL_YELLOW} ==> Upgrading packages to latest versions ${COL_RESET}\n"
-    apt upgrade -y -qq
+    apt upgrade -y -qq > /dev/null
 }
 
 # The script is used for graphic environment
-vb-guest() {
-    echo -en "${COL_YELLOW} ==> Installing VirtualBox guest extension ${COL_RESET}\n"
-    if grep -q VBOX /proc/scsi/scsi; then
-        echo "*** Installing virtualbox-guest-x11"
-
-    export DEBIAN_FRONTEND="noninteractive"
-    apt install -y -qq --no-install-recommends virtualbox-guest-x11
-    fi
-}
+#vb-guest() {
+#    echo -en "${COL_YELLOW} ==> Installing VirtualBox guest extension ${COL_RESET}\n"
+#    if grep -q VBOX /proc/scsi/scsi; then
+#        echo "*** Installing virtualbox-guest-x11"
+#
+#    export DEBIAN_FRONTEND="noninteractive"
+#    apt install -y -qq --no-install-recommends virtualbox-guest-x11
+#    fi
+#}
 
 # Install Ubuntu Desktop
 desktop() {
     echo -en "${COL_YELLOW} ==> Installing Ubuntu desktop ${COL_RESET}\n"
-    apt install -y -qq ubuntu-desktop
+    apt install -y -qq ubuntu-desktop fonts-firacode > /dev/null
 }
 
 # Use snap to install Visual Studio Code
@@ -47,9 +47,19 @@ vscode() {
     snap install --classic code
 }
 
+npm_install() {
+   snap install node --channel=10/stable --classic
+}
+
+vale_install() {
+    curl -sfL https://install.goreleaser.com/github.com/ValeLint/vale.sh | sudo bash -s -- -b /usr/local/bin
+}
+
 # Run functions
 update
 upgrade
-vb-guest
+#vb-guest
 desktop
 vscode
+npm_install
+vale_install
