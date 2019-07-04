@@ -21,7 +21,7 @@ update() {
 # Upgrade
 upgrade() {
     echo -en "${COL_YELLOW} ==> Upgrading packages to latest versions ${COL_RESET}\n"
-    apt upgrade -y -qq > /dev/null
+    apt upgrade -y -qq
 }
 
 # The script is used for graphic environment
@@ -38,7 +38,7 @@ upgrade() {
 # Install Ubuntu Desktop
 desktop() {
     echo -en "${COL_YELLOW} ==> Installing Ubuntu desktop ${COL_RESET}\n"
-    apt install -y -qq ubuntu-desktop fonts-firacode > /dev/null
+    apt install -y -qq ubuntu-desktop fonts-firacode
 }
 
 # Use snap to install Visual Studio Code

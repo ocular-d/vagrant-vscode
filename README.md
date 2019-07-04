@@ -51,7 +51,7 @@ First make sure that you have all [requirements](#requirements) installed.
 Now open a terminal and *clone* the repository:
 
 ```shell
-git clone https://ocular-d/vagrant-vscode
+git clone https://github.com/ocular-d/vagrant-vscode.git
 ```
 
 Change into that directory:
@@ -66,9 +66,13 @@ Start the setup process by starting vagrant:
 vagrant up
 ```
 
+![vagrant up 1](docs/assets/vagrant-up1.png "vagrant up 1")
+
 The first time running `vagrant up` will install and setup all required vagrant plugins.
 
 After the first run is finished, please run `vagrant up` for a second time.
+
+![vagrant up 2](docs/assets/vagrant-up2.png "vagrant up 2")
 
 Now you will see the boot process starting.
 
