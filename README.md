@@ -40,6 +40,7 @@ VSCode (Visual Studio Code) is running on top of an [Ubuntu 18.04 LTS Desktop](h
 
 - [Vagrant](https://www.vagrantup.com/ "Link to website of Vagrant")
 - [Git](https://git-scm.com/ "Link to website of Git")
+- [VirtualBox](https://www.virtualbox.org/ "Link to VirtualBox")
 
 ## Usage
 
