@@ -84,8 +84,6 @@ After the build and setup process is finished, you can login in with the followi
 
 **password:** *vagrant*
 
-
-
 ## Contributing
 
 We are a community effort, and everybody is most welcome to participate!
