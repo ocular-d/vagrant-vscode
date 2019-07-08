@@ -46,6 +46,16 @@ VSCode (Visual Studio Code) is running on top of an [Ubuntu 18.04 LTS Desktop](h
 
 ### Getting started
 
+Open you terminal and run:
+
+```shell
+vagrant init ocular-d/vscode-demo
+```
+
+| **Note:** Since this box is based on a full Ubuntu desktop, the image is large (around 2.G).
+
+### Building locally
+
 First make sure that you have all [requirements](#requirements) installed.
 
 Now open a terminal and *clone* the repository:
