@@ -21,6 +21,6 @@ help: ## This help message
 
 .PHONY: box
 box: ## Create Vagrant box
-	echo "$(OK_YELLOW)==> Packaging Vagrant box$(RESET)"
-	@vagrant package --output $(NAME).box
+	echo "$(YELLOW)==> Packaging Vagrant box$(RESET)"
+	@vagrant package --output $(NAME).box --vagrantfile Vagrantfile.box
 

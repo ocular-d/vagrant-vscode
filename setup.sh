@@ -23,7 +23,6 @@ extensions() {
     code --install-extension ybaumes.highlight-trailing-white-spaces
     code --install-extension myh.preview-vscode
     code --install-extension mrmlnc.vscode-remark
-    code --install-extension swyphcosmo.spellchecker
     code --install-extension johnpapa.read-time
     code --install-extension vincaslt.highlight-matching-tag
     code --install-extension PKief.material-icon-theme
