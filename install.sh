@@ -48,7 +48,7 @@ vscode() {
 }
 
 npm_install() {
-   snap install node --channel=10/stable --classic
+   snap install node --channel=12/stable --classic
 }
 
 vale_install() {

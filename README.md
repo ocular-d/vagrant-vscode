@@ -52,7 +52,7 @@ Open you terminal and run:
 vagrant init ocular-d/vscode-demo
 ```
 
-| **Note:** Since this box is based on a full Ubuntu desktop, the image is large (around 2.G).
+> **Note:** Since this box is based on a full Ubuntu desktop, the image is large (around 2.G).
 
 ### Building locally
 
