@@ -41,6 +41,14 @@ desktop() {
     apt install -y --no-install-recommends ubuntu-desktop fonts-firacode
 }
 
+
+# Install Peek PPA
+peek_install() {
+    add-apt-repository ppa:peek-developers/stable -y
+    apt update
+    apt install peek -y
+}
+
 # Use snap to install Visual Studio Code
 vscode() {
     echo -en "${COL_YELLOW} ==> Installing Visual Studio Code ${COL_RESET}\n"
@@ -60,6 +68,7 @@ update
 upgrade
 #vb-guest
 desktop
+peek_install
 vscode
 npm_install
 vale_install
