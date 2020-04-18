@@ -44,8 +44,8 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
   # Disable NFS sharing (==> default: Mounting NFS shared folders...)
-  config.vm.synced_folder ".", "/vagrant", type: "nfs", disabled: true
-
+  #config.vm.synced_folder ".", "/vagrant", type: "nfs", disabled: true
+  config.vm.synced_folder "share", "/home/vagrant/share"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
