@@ -30,6 +30,7 @@ extensions() {
     code --install-extension eamodio.gitlens
     code --install-extension drewbourne.vscode-remark-lint
     code --install-extension testthedocs.vale
+    code --install-extension ocld.ocld-snippets
 }
 
 npm_modules() {

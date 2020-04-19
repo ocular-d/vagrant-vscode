@@ -38,7 +38,7 @@ upgrade() {
 # Install Ubuntu Desktop
 desktop() {
     echo -en "${COL_YELLOW} ==> Installing Ubuntu desktop ${COL_RESET}\n"
-    apt install -y --no-install-recommends ubuntu-desktop fonts-firacode
+    apt install -y --no-install-recommends gnome-session gnome-terminal xserver-xorg xinit lightdm fonts-firacode
 }
 
 
